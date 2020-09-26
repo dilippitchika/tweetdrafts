@@ -1,4 +1,3 @@
-import React from "react";
 import axios from "axios";
 
 const getThreads = (base_table, api_key, callback) => {

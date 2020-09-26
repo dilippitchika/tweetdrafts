@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { updateThread, createThread } from "./APIhandler";
 import "./RenderTweets.css";
@@ -20,7 +20,6 @@ const LimitedTextarea = ({
   const handleRemove = (id) => {
     removeTweet(id);
   };
-  let isEmpty = false;
   const changeText = (e) => {
     handleInputChange(e.target.value, id);
   };
@@ -65,7 +64,7 @@ function Tweetlist(props) {
     title_found = meta.fields["Thread title"];
     uid = meta.id;
   }
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit } = useForm();
   const tweet_lists = [];
   for (var j = 0; j < tweet_nos.length; j++) {
     let key2 = "Tweet" + (j + 1).toString();
@@ -93,7 +92,7 @@ function Tweetlist(props) {
   };
 
   const onSubmit = (data) => {
-    if (uid != "") {
+    if (uid !== "") {
       updateThread(uid, data, airtable_keys, showToast);
     } else {
       createThread(data, airtable_keys, showToast);

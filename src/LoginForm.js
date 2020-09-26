@@ -30,7 +30,6 @@ function AirtableForm(props) {
           <div className="form-group">
             <label htmlFor="base">Airtable base</label>
             <input
-              id="username"
               autoComplete="username"
               className="form-control"
               type="text"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getThreads, updateThreadAirtable } from "./methods";
+import { getThreads } from "./methods";
 import OpenThread from "./OpenThread";
 import { encodeData, deleteThread } from "./APIhandler";
 import { useToasts } from "react-toast-notifications";
@@ -7,7 +7,6 @@ import "./Dashboard.css";
 
 function ThreadCard(props) {
   const meta = props.element;
-  const keys = Object.keys(meta.fields);
   const tweets = Object.keys(meta.fields).length - 2;
   const title = meta.fields["Thread title"];
   const id = meta.id;
