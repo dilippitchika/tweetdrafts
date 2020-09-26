@@ -48,16 +48,16 @@
   color: #ab0f0f;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .thread-container {
-    width: 95% !important;
+    width: 80% !important;
     min-width: 320px !important;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .thread-container {
-    width: 80% !important;
+    width: 95% !important;
     min-width: 320px !important;
   }
 }
