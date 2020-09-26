@@ -1,0 +1,63 @@
+.dashboard {
+  background-color: #15202c;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar-dashboard {
+  background-color: #0a0f15;
+}
+.thread-container {
+  background-color: transparent;
+  width: 80%;
+  margin-top: 0;
+}
+.thread-cell {
+  padding: 0;
+}
+.logo-text {
+  color: white !important;
+  margin-right: auto;
+  margin-left: 12px;
+}
+
+.thread-card {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 2em 2em;
+  margin: 1em 1em;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.thread-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.thread-card h3 {
+  font-size: 18px;
+}
+.thread-card p {
+  font-size: 14px;
+}
+.thread-button {
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  color: #808080;
+}
+.thread-button:hover {
+  color: #ab0f0f;
+}
+
+@media (max-width: 576px) {
+  .thread-container {
+    width: 95% !important;
+    min-width: 320px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .thread-container {
+    width: 80% !important;
+    min-width: 320px !important;
+  }
+}

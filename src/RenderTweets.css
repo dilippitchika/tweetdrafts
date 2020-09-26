@@ -1,0 +1,64 @@
+.all-tweets {
+  background-color: transparent !important;
+  width: 60%;
+  color: white;
+  margin-top: 1rem !important;
+}
+
+/* @media screen and (max-width: 768px) {
+  
+} */
+
+@media (max-width: 576px) {
+  .all-tweets {
+    width: 95% !important;
+    min-width: 320px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .all-tweets {
+    width: 80% !important;
+    min-width: 320px !important;
+  }
+}
+.title-input {
+  margin-bottom: 2em;
+  background-color: #0a121b;
+  border: none;
+  color: white;
+}
+.title-input:focus {
+  background-color: #0a121b;
+  color: white;
+}
+.tweet-area {
+  background-color: #0a121b;
+  border: none;
+  color: white;
+}
+.tweet-area:focus {
+  background-color: #0a121b;
+  color: white;
+}
+.tweet-remove {
+  background: none;
+  border: none;
+  padding: 0;
+  color: rgb(179, 179, 179);
+}
+.limit-info {
+  font-size: 12px;
+  padding-top: 6px;
+  margin-left: auto;
+}
+.thread-intro {
+  margin-bottom: 1rem !important;
+}
+
+.tweet-title {
+  margin: 0;
+}
+.tweet-nav {
+  margin-bottom: 6px;
+}
