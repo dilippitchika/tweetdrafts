@@ -32,11 +32,11 @@ function ThreadCard(props) {
     <div className="col-md-6 thread-cell">
       <div className="thread-card" onClick={intoThread}>
         <div className="row">
-          <div className="col-md-10">
+          <div className="col-md-10 col-sm-10 col-xs-10">
             <h3>{title}</h3>
             <p>{tweets} tweets</p>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 col-sm-2 col-xs-2">
             <button onClick={removeThread} className="thread-button">
               <i className="fa fa-trash" />
             </button>
