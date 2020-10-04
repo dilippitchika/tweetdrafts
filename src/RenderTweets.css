@@ -46,6 +46,7 @@
   border: none;
   padding: 0;
   color: rgb(179, 179, 179);
+  margin-left: 8px;
 }
 .limit-info {
   font-size: 12px;

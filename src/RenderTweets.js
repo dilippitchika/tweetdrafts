@@ -4,6 +4,7 @@ import { updateThread, createThread } from "./APIhandler";
 import "./RenderTweets.css";
 import TextareaAutosize from "react-textarea-autosize";
 import { useToasts } from "react-toast-notifications";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 const LimitedTextarea = ({
   rows,
   cols,
@@ -24,10 +25,23 @@ const LimitedTextarea = ({
     handleInputChange(e.target.value, id);
   };
 
+  const copyText = () => {
+    const copyValue = value;
+    console.log(value);
+    document.execCommand("copy");
+  };
+
   return (
     <div className="tweet-config">
       <div className="d-flex justify-content-between tweet-nav">
-        <p className="tweet-title">{tweet_no}</p>
+        <div className="d-flex">
+          <p className="tweet-title">{tweet_no}</p>
+          <CopyToClipboard text={value} onCopy={() => console.log("copied")}>
+            <button type="button" className="tweet-remove">
+              <i className="fa fa-copy" />
+            </button>
+          </CopyToClipboard>
+        </div>
         <button
           type="button"
           className="tweet-remove"
